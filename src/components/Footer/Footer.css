@@ -1,0 +1,19 @@
+.footer {
+    padding: 30px;
+    padding-bottom: 0;
+    background-color: #12263e;
+    color: var(--brand-color-white);
+    margin: 0;
+    margin-top: 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding: 15px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}

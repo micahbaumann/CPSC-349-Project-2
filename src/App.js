@@ -1,25 +1,63 @@
-import logo from './logo.svg';
+// Stylesheets
 import './App.css';
 
+// Libraries
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
+
+// Components
+import Navbar from './components/navbar/Navbar';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
+
 function App() {
-  return (
+    const [navbarHeight, setNavbarHeight] = useState(0);
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        
+        <Router>
+            <Navbar
+                links={
+                    [
+                        {
+                            name: "Home",
+                            link: "/"
+                        },
+                        {
+                            name: "About",
+                            link: "/about"
+                        },
+                        {
+                            name: "Projects",
+                            link: "/projects"
+                        },
+                        {
+                            name: "Contact",
+                            link: "/contact"
+                        },
+                    ]
+                }
+                image="mb.png"
+                setNavbarHeight={setNavbarHeight}
+                title="Micah Baumann"
+            />
+            <div className='main' style={{ paddingTop: navbarHeight }}>
+                <Routes>
+                <Route path="/" element={<Outlet />}>
+                    <Route index element={<Home />} />
+                    <Route path="about" element={<About />} />
+                    <Route path="projects" element={<Projects />} />
+                    <Route path="contact" element={<Contact />} />
+                </Route>
+            </Routes>
+            </div>
+        </Router>
+        <Footer />
     </div>
-  );
+    );
 }
 
 export default App;
