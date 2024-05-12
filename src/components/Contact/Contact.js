@@ -3,8 +3,8 @@ import Input from "../forms/Input";
 import Textarea from "../forms/Textarea";
 import Button from "../forms/Button";
 import "./Contact.css";
-import database from "../../firebase";
-import { onValue, ref } from "firebase/database";
+// import database from "./firebase";
+// import { ref, set } from "firebase/database";
 // import axios from "axios";
 
 
@@ -26,6 +26,21 @@ const Contact = () => {
         // .catch(function (error) {
         //     console.log(error);
         // });
+        
+        // set(ref(database, '/'), {
+        //     name: e.target.name.value,
+        //     email: e.target.email.value,
+        //     subject: e.target.subject.value,
+        //     body: e.target.body.value,
+        // });
+        // const contact = database.ref("contacts").push();
+        // {
+        //     name: e.target.name.value,
+        //     email: e.target.email.value,
+        //     subject: e.target.subject.value,
+        //     body: e.target.body.value,
+        // }
+        // database.ref(`newContacts/${}`)
         console.log(e.target.name.value);
     }
 
