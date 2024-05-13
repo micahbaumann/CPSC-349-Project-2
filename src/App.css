@@ -9,6 +9,12 @@ body {
     color: #202124;
 }
 
+.main {
+    min-height: calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+}
+
 /* Base Links */
 a {
     text-decoration: none;
