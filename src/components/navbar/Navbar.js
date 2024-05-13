@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css"
 
 const Navbar = (props) => {
@@ -58,7 +58,7 @@ const Navbar = (props) => {
             </div>
             <div className="navlinks">
                 <ul className="navlist">
-                    {props.links.map((link, key) => <li key={key}><Link to={link.link}>{link.name}</Link></li>)}
+                    {props.links.map((link, key) => <li key={key}><NavLink to={link.link} data-text={link.name} className={({ isActive }) =>isActive ? "pageActive" : ""}>{link.name}</NavLink></li>)}
                 </ul>
             </div>
         </div>

@@ -4,7 +4,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* box-shadow: 0 1px 2px rgba(0,0,0,0.5); */
 
     top: 0;
     position: fixed;
@@ -35,19 +34,32 @@
 .navlist li a {
     text-decoration: none;
     padding: 15px;
-    color: blue;
+    color: #202124;
+    display: inline-block;
+    text-align: center;
 }
 
+.navlist li a::after {
+    display: block;
+    content: attr(data-text);
+    font-weight: bold;
+    height: 0;
+    color: transparent;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
 .navlist li a:visited {
-    color: blue;
+    color: #202124;
 }
 
 .navlist li a:hover {
-    color: green;
+    color: #0a19b6;
+    font-weight: bold;
 }
 
 .navlist li a:active {
-    color: orange;
+    color: #0a19b6;
 }
 
 .navTitle, .navTitle:hover, .navTitle:active, .navTitle:visited {
@@ -60,4 +72,9 @@
 .navLeft {
     display: flex;
     align-items: center;
+}
+
+.pageActive {
+    color: #0a19b6 !important;
+    font-weight: bold;
 }

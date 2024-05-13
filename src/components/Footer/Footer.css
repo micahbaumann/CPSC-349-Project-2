@@ -17,3 +17,11 @@
 .footer-bottom p {
     margin: 0;
 }
+
+.footLinks, .footLinks:visited, .footLinks:active {
+    color: var(--brand-color-white);
+}
+
+.footLinks:hover {
+    color: #ccc;
+}

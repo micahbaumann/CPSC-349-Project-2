@@ -15,6 +15,7 @@ import Footer from './components/Footer/Footer';
 
 function App() {
     const [navbarHeight, setNavbarHeight] = useState(0);
+
     return (
     <div className="App">
         
