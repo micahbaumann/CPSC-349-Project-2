@@ -25,3 +25,28 @@
 .footLinks:hover {
     color: #ccc;
 }
+
+.footerSocialLinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.footerSocialLinks a {
+    margin: 0 10px 0 10px;
+    color: #fff;
+}
+
+.footerSocialLinks a:hover {
+    color: #ccc;
+}
+
+.footerSocialLinks a i {
+    font-size: 50px;
+}
+
+.footerConnect {
+    text-align: center;
+    margin: 0;
+}

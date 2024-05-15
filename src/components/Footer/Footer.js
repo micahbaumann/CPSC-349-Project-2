@@ -12,6 +12,11 @@ const scrollUp = () => {
 const Footer = () => {
     return (
         <div className="footer">
+            <h1 className="footerConnect">Connect with Me</h1>
+            <div className="footerSocialLinks">
+                <a href="https://github.com/micahbaumann" target="_blank" rel="noreferrer noopener"><i className="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/micahbaumann" target="_blank" rel="noreferrer noopener"><i className="fa-brands fa-linkedin"></i></a>
+            </div>
             <div className="footer-bottom">
                 <p>Copyright &copy; {new Date().getFullYear()} Micah Baumann</p>
                 <Link onClick={scrollUp} to="/" className="footLinks">Home</Link>

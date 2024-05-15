@@ -62,12 +62,6 @@ const Home = () => {
                     <SkillCard src={litefs} alt="LiteFS Logo" Title="LiteFS" />
                     <SkillCard src={jquery} alt="jQuery Logo" Title="jQuery" />
                 </div>
-
-                <h1 className="pageTitle">Connect with Me</h1>
-                <div className="homeSocialLinks">
-                    <a href="https://github.com/micahbaumann" target="_blank" rel="noreferrer noopener"><i className="fa-brands fa-github"></i></a>
-                    <a href="https://linkedin.com/in/micahbaumann" target="_blank" rel="noreferrer noopener"><i className="fa-brands fa-linkedin"></i></a>
-                </div>
             </div>
         </div>
     );
