@@ -1,0 +1,33 @@
+.aboutDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profilePic {
+    max-width: 300px;
+    height: 100%;
+    margin: 0 10px 0 10px;
+}
+
+.sideBySide {
+    display: flex;
+    width: 70%;
+}
+
+.textDiv{
+    margin: 0 10px 0 10px;
+}
+
+.socialLinks a {
+    margin: 0 10px 0 10px;
+    color: #202124;
+}
+
+.socialLinks a:hover {
+    color: #0a19b6;
+}
+
+.socialLinks a i {
+    font-size: 50px;
+}

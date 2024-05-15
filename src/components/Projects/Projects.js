@@ -28,7 +28,7 @@ const Projects = () => {
                         <img src={urls} alt="URLs Framework Logo" />
                         <div>
                             <p>URLs is a micro framework that takes ugly URLs and allows you to rewrite it any way you want. It is made in PHP and is designed to be deployed on an Apache server.</p>
-                            <a href="https://github.com/urls-framework/URLS">GitHub</a>
+                            <a href="https://github.com/urls-framework/URLS" target="_blank" rel="noreferrer noopener">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@ const Projects = () => {
 
             <div className="projectLeft">
                 <div className="project">
-                    <h1 className="projectTitle">This Website (<a href="https://micahbaumann.com">micahbaumann.com</a>)</h1>
+                    <h1 className="projectTitle">This Website (<a href="https://micahbaumann.com" target="_blank" rel="noreferrer noopener">micahbaumann.com</a>)</h1>
                     <div className="projectSides">
                         <img src={mb} alt="MB Logo" />
                         <p>This website is a static website built using React and is deployed on GitHub Pages.</p>
@@ -56,7 +56,7 @@ const Projects = () => {
 
             <div className="projectRight">
                 <div className="project">
-                    <h1 className="projectTitle">Racers Under the Son Website(<a href="https://ruts.org">ruts.org</a>)</h1>
+                    <h1 className="projectTitle">Racers Under the Son Website (<a href="https://ruts.org" target="_blank" rel="noreferrer noopener">ruts.org</a>)</h1>
                     <div className="projectSides">
                         <img src={ruts} alt="Ruts Logo" />
                         <p>Ruts.org is a WordPress website I built for Racers Under the Son. I built a theme using HTML, CSS and JS. I then migrated their site from the old theme to the new theme.</p>
@@ -66,7 +66,7 @@ const Projects = () => {
 
             <div className="projectLeft">
                 <div className="project">
-                    <h1 className="projectTitle">Morris Garage Doors Website (<a href="https://morrisgaragedoors.com">morrisgaragedoors.com</a>)</h1>
+                    <h1 className="projectTitle">Morris Garage Doors Website (<a href="https://morrisgaragedoors.com" target="_blank" rel="noreferrer noopener">morrisgaragedoors.com</a>)</h1>
                     <div className="projectSides">
                         <img src={morrisgd} alt="Morris Garage Doors Logo" />
                         <p>Morrisgaragedoors.com is a WordPress website I built for Morris Garage Doors. I built a theme using HTML, CSS and JS. I deployed the site on AWS Lightsail with plans to migrate it to AWS EC2.</p>
