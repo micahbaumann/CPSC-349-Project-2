@@ -47,7 +47,7 @@
     color: transparent;
     overflow: hidden;
     visibility: hidden;
-  }
+}
 
 .navlist li a:visited {
     color: #202124;
@@ -77,4 +77,73 @@
 .pageActive {
     color: #0a19b6 !important;
     font-weight: bold;
+}
+
+.openNav {
+    display: none;
+    font-size: 35px;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.mobileNavlist {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #12263e;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.closeDiv {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.navClose {
+    font-size: 35px;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.mobileLinks {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.mobileLink {
+    display: flex;
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.mobileLink:hover {
+    color: #ccc;
+}
+
+.mobileLink:active, .mobileLink:visited {
+    color: #fff;
+}
+
+@media screen and (max-width: 720px) {
+    .navlist {
+        display: none;
+    }
+    .openNav {
+        display: block;
+    }
 }

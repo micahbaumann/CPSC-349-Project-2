@@ -60,7 +60,7 @@ const Contact = () => {
                     <Input type="text" name="email" placeholderLabel="Your Email" className="formElement" disabled={isSubmitting} />
                     <Input type="text" name="subject" placeholderLabel="Subject" className="formElement" disabled={isSubmitting} />
                     <Textarea name="body" className="formElement" innerReize="vertical" placeholderLabel="Message" rows="7" disabled={isSubmitting} ></Textarea>
-                    <Button type="submit" disabled={isSubmitting}>Send</Button>
+                    <Button type="submit" className="submitBtn" disabled={isSubmitting}>Send</Button>
                 </form>
                 <p className={`sendMsg ${sendMsg[1] ? "sendError": ""}`}>{sendMsg[0]}</p>
             </div>

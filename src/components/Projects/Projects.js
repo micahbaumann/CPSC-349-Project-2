@@ -71,7 +71,7 @@ const Projects = () => {
 
             <div className="projectLeft">
                 <div className="project">
-                    <h1 className="projectTitle">Morris Garage Doors Website (<a href="https://morrisgaragedoors.com" target="_blank" rel="noreferrer noopener">morrisgaragedoors.com</a>)</h1>
+                    <h1 style={{overflowWrap: "break-word"}} className="projectTitle">Morris Garage Doors Website (<a href="https://morrisgaragedoors.com" target="_blank" rel="noreferrer noopener">morrisgaragedoors.com</a>)</h1>
                     <div className="projectSides">
                         <img src={morrisgd} alt="Morris Garage Doors Logo" />
                         <p>Morrisgaragedoors.com is a WordPress website I built for Morris Garage Doors. I built a theme using HTML, CSS and JS. I deployed the site on AWS Lightsail with plans to migrate it to AWS EC2.</p>

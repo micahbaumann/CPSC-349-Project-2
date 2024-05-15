@@ -28,6 +28,7 @@
     box-sizing: border-box;
     -webkit-box-sizing:border-box;
     -moz-box-sizing: border-box;
+    width: 100%;
 }
 
 .input button:hover, input[type=button]:hover {

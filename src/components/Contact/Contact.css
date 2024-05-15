@@ -26,3 +26,13 @@
 .sendMsg {
     font-size: 25px;
 }
+
+@media screen and (max-width: 720px) {
+    .contactForm {
+        width: 95%;
+    }
+
+    .submitBtn {
+        width: 100%;
+    }
+}

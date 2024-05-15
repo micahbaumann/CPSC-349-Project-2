@@ -49,3 +49,18 @@
     max-width: 600px;
     width: 100%;
 }
+
+@media screen and (max-width: 720px) {
+    .innerDivProject {
+        width: 95%;
+    }
+
+    .projectSides {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectSides p, .projectSides img, .projectSides div {
+        max-width: 100%;
+    }
+}

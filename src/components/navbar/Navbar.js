@@ -5,6 +5,7 @@ import "./Navbar.css"
 const Navbar = (props) => {
     const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
     const [firstScroll, setFirstScroll] = useState(true);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const nav = useRef();
 
     if (firstScroll && prevScrollPos > 0) {
@@ -58,6 +59,15 @@ const Navbar = (props) => {
           });
     };
 
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    const mobileClick = () => {
+        setIsMenuOpen(!isMenuOpen);
+        scrollUp();
+    };
+
     return ( 
         <div className="navbar" id="nav" ref={nav}>
             <div className="navLeft">
@@ -68,6 +78,19 @@ const Navbar = (props) => {
                 <ul className="navlist">
                     {props.links.map((link, key) => <li key={key}><NavLink onClick={scrollUp} to={link.link} data-text={link.name} className={({ isActive }) =>isActive ? "pageActive" : ""}>{link.name}</NavLink></li>)}
                 </ul>
+
+                <div className="openNav" onClick={toggleMenu}>
+                    <i className="fa-solid fa-bars"></i>
+                </div>
+
+                {isMenuOpen && (
+                    <div className="mobileNavlist">
+                        <div className="closeDiv"><i className="fa-solid fa-xmark navClose" onClick={toggleMenu}></i></div>
+                        <ul className="mobileLinks">
+                            {props.links.map((link, key) => <li key={key}><NavLink onClick={mobileClick} to={link.link} className="mobileLink">{link.name}</NavLink></li>)}
+                        </ul>
+                    </div>
+                )}
             </div>
         </div>
     );
