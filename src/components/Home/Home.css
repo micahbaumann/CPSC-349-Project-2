@@ -15,20 +15,3 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-
-.homeSocialLinks {
-    margin-top: 20px;
-}
-
-.homeSocialLinks a {
-    margin: 0 10px 0 10px;
-    color: #202124;
-}
-
-.homeSocialLinks a:hover {
-    color: #0a19b6;
-}
-
-.homeSocialLinks a i {
-    font-size: 50px;
-}
