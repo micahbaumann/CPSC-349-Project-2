@@ -13,6 +13,7 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
     const [navbarHeight, setNavbarHeight] = useState(0);
@@ -54,6 +55,7 @@ function App() {
                     <Route path="projects" element={<Projects />} />
                     <Route path="contact" element={<Contact />} />
                 </Route>
+                <Route path="*" element={<NotFound />} />
             </Routes>
             </div>
             <Footer />
