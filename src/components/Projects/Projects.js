@@ -5,8 +5,13 @@ import square from "../../images/square.png";
 import urls from "../../images/urls.png";
 import ruts from "../../images/ruts.jpg";
 import morrisgd from "../../images/morrisgd.jpg";
+import { useEffect } from "react";
 
 const Projects = () => {
+    useEffect(() => {
+        document.title = "Projects - Micah Baumann";
+    }, []);
+
     return (
     <div className="projectsDiv">
         <h1 className="pageTitle">My Projects</h1>

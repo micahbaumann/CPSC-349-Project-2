@@ -20,8 +20,13 @@ import reactLogo from "../../images/react.svg";
 import next from "../../images/nextjs.svg";
 import litefs from "../../images/litefs.svg";
 import jquery from "../../images/jquery.png";
+import { useEffect } from "react";
 
 const Home = () => {
+    useEffect(() => {
+        document.title = "Micah Baumann";
+    }, []);
+    
     return (
         <div className="homeDiv">
             <div className="innerDiv">

@@ -1,7 +1,12 @@
 import "./About.css";
 import me from "../../images/me.jpg";
+import { useEffect } from "react";
 
 const About = () => {
+    useEffect(() => {
+        document.title = "About - Micah Baumann";
+    }, []);
+
     return (
         <div className="aboutDiv">
             <h1 className="pageTitle">About Me</h1>
