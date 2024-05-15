@@ -33,4 +33,12 @@ a:active {
 .pageTitle {
     text-align: center;
     font-size: 42px;
+    margin-bottom: 0;
+}
+
+.innerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
 }

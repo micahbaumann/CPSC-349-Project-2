@@ -1,0 +1,51 @@
+.projectsDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projectSides {
+    display: flex;
+}
+
+.projectSides p, .projectSides img, .projectSides div {
+    margin: 0 10px 0 10px;
+    max-width: 50%;
+    height: 100%;
+}
+
+.projectSides div p {
+    margin: 0;
+    max-width: 100%;
+}
+
+.projectTitle {
+    text-align: center;
+}
+
+.innerDivProject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.projectRight {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+}
+
+.projectLeft {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.project {
+    /* max-width: 50%; */
+    max-width: 600px;
+    width: 100%;
+}

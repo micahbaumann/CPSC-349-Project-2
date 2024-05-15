@@ -50,15 +50,23 @@ const Navbar = (props) => {
         props.setNavbarHeight(nav.current.offsetHeight);
     }, [props]);
 
+    const scrollUp = () => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+          });
+    };
+
     return ( 
         <div className="navbar" id="nav" ref={nav}>
             <div className="navLeft">
-                <Link to="/"><img src={props.image} alt="Logo" className="navbar-image"/></Link>
-                <Link to="/"><h1 className="navTitle">{props.title}</h1></Link>
+                <Link onClick={scrollUp} to="/"><img src={props.image} alt="Logo" className="navbar-image"/></Link>
+                <Link onClick={scrollUp} to="/"><h1 className="navTitle">{props.title}</h1></Link>
             </div>
             <div className="navlinks">
                 <ul className="navlist">
-                    {props.links.map((link, key) => <li key={key}><NavLink to={link.link} data-text={link.name} className={({ isActive }) =>isActive ? "pageActive" : ""}>{link.name}</NavLink></li>)}
+                    {props.links.map((link, key) => <li key={key}><NavLink onClick={scrollUp} to={link.link} data-text={link.name} className={({ isActive }) =>isActive ? "pageActive" : ""}>{link.name}</NavLink></li>)}
                 </ul>
             </div>
         </div>

@@ -1,5 +1,6 @@
-// Stylesheets
+// Stylesheets/Images
 import './App.css';
+import mb from "./images/mb.png";
 
 // Libraries
 import React, { useState } from "react";
@@ -41,7 +42,7 @@ function App() {
                         },
                     ]
                 }
-                image="mb.png"
+                image={mb}
                 setNavbarHeight={setNavbarHeight}
                 title="Micah Baumann"
             />
@@ -55,8 +56,8 @@ function App() {
                 </Route>
             </Routes>
             </div>
+            <Footer />
         </Router>
-        <Footer />
     </div>
     );
 }
